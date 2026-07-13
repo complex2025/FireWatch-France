@@ -1,2 +1,1 @@
-# FireWatch-France
-Surveillance des incendies en France
+# FireWatch France Interface

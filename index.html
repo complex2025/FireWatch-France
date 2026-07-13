@@ -1,0 +1,46 @@
+<!doctype html><html lang='fr'><head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>FireWatch France</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<header>
+<div><h1>🔥 FireWatch France</h1><small>Surveillance locale</small></div>
+<div class="state">🟢 Surveillance active</div>
+</header>
+
+<div class="toolbar">
+<input id="city" value="Surfonds">
+<select id="radius">
+<option>10</option><option>20</option><option selected>30</option><option>50</option><option>100</option>
+</select>
+<button onclick="refreshWeather()">🔄 Actualiser</button>
+</div>
+
+<div class="layout">
+<aside>
+<div class="card">
+<h3>🔥 Alertes</h3>
+<div class="ok">🟢 Aucune alerte</div>
+</div>
+<div class="card">
+<h3>💨 Météo</h3>
+<div id="weather">Chargement...</div>
+</div>
+<div class="card">
+<h3>🛰 Sources</h3>
+<ul>
+<li>Open-Meteo ✅</li>
+<li>OpenStreetMap ✅</li>
+<li>Préfectures (à venir)</li>
+<li>Copernicus (à venir)</li>
+</ul>
+</div>
+</aside>
+<main><div id="map"></div></main>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/app.js"></script>
+</body></html>
