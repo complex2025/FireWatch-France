@@ -1,1 +1,0 @@
-# FireWatch France Interface
